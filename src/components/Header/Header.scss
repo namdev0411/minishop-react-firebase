@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.header{
+	height: 130px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: visible;
+	width: 100%;
+	z-index: 2;
+	transition: height .45s linear;
+
+	padding: 32px 34px 58px;
+	background: -webkit-gradient(linear, left top, right top, from(#f0f9ff), color-stop(0%, #aa7ad0), to(#d07acd));
+	background: -o-linear-gradient(left, #f0f9ff 0%, #aa7ad0 0%, #d07acd 100%);
+	background: linear-gradient(to right, #f0f9ff 0%, #aa7ad0 0%, #d07acd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#d07acd', GradientType=1);
+
+	&.scroll{
+		height: 100px;
+	}
+	.title{
+		color: brown;
+		font-family: 'Quicksand', sans-serif;
+	}
+	.nav-bar{ 
+		a{
+		color: #fff;
+		font-weight: 600;
+		font-size:  1.25rem;
+			.fa-shopping-cart{
+				font-size: 1.5rem;
+			}
+		}
+		.cart-icon{
+			position: relative;
+			font-size: 1.7rem;
+			color: #fff;
+			cursor: pointer;
+
+			
+			.cart-count{
+				position: absolute;
+				top: 0rem;
+				left: .1rem;
+				color: red;
+
+				width: 30px;
+				font-size: 1.2rem;
+				font-weight: 600;
+				text-align: center;
+			}
+		}
+	}	 
+	
+}
